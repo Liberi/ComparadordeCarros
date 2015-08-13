@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/carro1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/defaultcar"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="45px"
+            android:layout_marginRight="45px"
+            android:layout_marginBottom="0dp" />
+
+        <ImageView
+            android:id="@+id/fechar_carro1"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:src="@drawable/close_red"
+            android:layout_alignTop="@+id/carro1"
+            android:layout_alignLeft="@+id/carro1"
+            android:layout_alignStart="@+id/carro1"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione um carro"
+            android:layout_below="@+id/carro1"
+            android:layout_marginLeft="15px"
+            android:layout_marginBottom="25px"
+            android:layout_marginTop="15px"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione um carro"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignRight="@+id/carro2"
+            android:layout_alignEnd="@+id/carro2"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- vs -"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/carro2"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/defaultcar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="45px"
+            android:layout_marginRight="45px"
+            android:layout_marginBottom="0dp" />
+
+        <ImageView
+            android:id="@+id/fechar_carro2"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:src="@drawable/close_red"
+            android:layout_alignTop="@+id/carro2"
+            android:layout_alignRight="@+id/carro2"
+            android:layout_alignEnd="@+id/carro2"
+            android:layout_marginTop="5px"
+            android:layout_marginRight="5px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginBottom="25px"
+            android:text="Comparar"
+            android:id="@+id/btncomparar"
+            android:background="@drawable/button_states"
+            android:layout_below="@+id/textView5"
+            android:layout_toLeftOf="@+id/textView5"
+            android:layout_toStartOf="@+id/textView5" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
